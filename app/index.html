@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HomeLedger — a household budget site: track income and spending, plan budgets by category, stay on top of bills and save for goals. Works offline, on desktop and phone.">
+  <title>HomeLedger — Household Budget</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23d97706'/%3E%3Ctext x='16' y='23' font-size='18' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='%23ffffff'%3EH%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#/"><span class="brand-mark" aria-hidden="true">H</span>HomeLedger</a>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="#/">Dashboard</a>
+        <a href="#/transactions">Transactions</a>
+        <a href="#/budgets">Budgets</a>
+        <a href="#/bills">Bills</a>
+        <a href="#/goals">Goals</a>
+        <a href="#/insights">Insights</a>
+      </nav>
+      <label class="month-picker">Month
+        <select id="month-select" aria-label="Choose month"></select>
+      </label>
+    </div>
+  </header>
+  <main id="page" class="wrap"></main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><strong>HomeLedger</strong> — a budget for the whole household. Your figures stay in your browser: nothing is sent anywhere, and the site works with no network at all.</p>
+      <p class="footer-links">
+        <a href="#/">Dashboard</a> · <a href="#/transactions">Transactions</a> · <a href="#/budgets">Budgets</a> · <a href="#/bills">Bills</a> · <a href="#/goals">Goals</a> · <a href="#/insights">Insights</a>
+      </p>
+    </div>
+  </footer>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
